@@ -37,7 +37,7 @@ export interface IQueue extends IResource {
    *
    * If this queue was created in this stack (`new Queue`), a queue policy
    * will be automatically created upon the first call to `addToPolicy`. If
-   * the queue is improted (`Queue.import`), then this is a no-op.
+   * the queue is imported (`Queue.import`), then this is a no-op.
    */
   addToResourcePolicy(statement: iam.PolicyStatement): void;
 
